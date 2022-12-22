@@ -1,0 +1,153 @@
+@charset "UTF-8";
+body{
+	margin: 0px;
+	background-image: url("https://cdn.pixabay.com/photo/2018/08/15/07/19/indian-flag-3607410_960_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+nav{
+	background-color: orange;
+	font-size: 20px;
+	display: flex;
+	justify-content: right;
+	padding: 20px;
+	
+}
+nav a{
+	padding-right: 20px;
+	padding-left: 20px;
+	cursor: pointer;
+	color: white;
+}
+nav a:hover{
+	color: black;
+}
+.form-container{
+	background-color: #F8EDE3;
+	width: 20%;
+	padding: 80px;
+	margin-top:6%;
+	margin-left:60%;
+	margin-right: 8%;
+	margin-bottom: 4%;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	
+}
+.form-container p {
+	font-weight: bold;
+	font-size: 30px;
+}
+.form-container label{
+	font-weight: bold;
+	font-size: 25px;
+}
+.form-container input{
+	text-align: center;
+	font-weight: medium;
+	font-size: 20px;
+	height: 35px;
+	width: 80%;
+	background-color: skyblue;
+	border-radius: 30px;
+	margin-top: 20px;
+}
+.form-container button{
+	font-weight: bold;
+	font-size: 20px;
+	height: 50px;
+	width: 83%;
+	background-color: skyblue;
+	border-radius: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+form a{
+	color: black;
+	font-size: 20px;
+	margin-left: 21%;
+}
+form a:hover{
+	color: blue;
+}
+
+/* About Us */
+
+.aboutus{
+	width:100vx;
+	height: 75vh;
+	margin-top : 2%;
+	margin-bottom : 2%;
+	padding: 2%;
+	background-color: #F8EDE3;
+	opacity: .8;
+	font-size: 30px;
+}
+.aboutus p{
+	font-weight: bold;
+}
+.aboutus img{
+	margin-right: 10px;
+	width: 15%;
+}
+
+/* contactus */
+
+.form-container textarea{
+	background-color: skyblue;
+	border-radius: 10px;
+}
+
+/* Welcome User! */
+
+.form-container select{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	height: 38px;
+	width: 83%;
+	background-color: skyblue;
+	border-radius: 30px;
+}
+
+/* result */
+
+.table{
+	/*width: 100vx;*/
+	height: 87vh;
+	background-color: #F8EDE3;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.table th,td{
+	padding: 5px 60px;
+}
+.table img{
+	width: 80px;
+	height: 80px;
+}
+
+/* extra page */
+
+.container{
+	background-color: #F8EDE3;
+	width: 35%;
+	padding: 80px;
+	margin-top:6%;
+	margin-left:50%;
+	margin-right: 8%;
+	margin-bottom: 4%;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	
+}
+.container a{
+	margin-left: 35%;
+}
