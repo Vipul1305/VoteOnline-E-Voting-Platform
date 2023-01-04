@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import ="java.sql.DriverManager" %>
 <%@ page import ="java.sql.ResultSet" %>
-<%@ page import ="java.sql.PreparedStatement" %>
+<%@ page import ="java.sql.Statement" %>
 <%@ page import ="java.sql.Connection" %>
 <%@ page import ="java.sql.PreparedStatement" %>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
 <link  rel ="stylesheet" href="style.css">
 <%
 
-String a[] = new String[100];
+int a[] = new int[100];
 
 Class.forName("com.mysql.cj.jdbc.Driver");
 java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/onlinevotingdb","root","Vipul@singh1305");
@@ -23,7 +23,8 @@ ResultSet rs = ((java.sql.Statement)st).executeQuery("select partie,count(partie
 
 int i = 0;
 while(rs.next()){
-	a[i] = rs.getString("c");
+	int temp = Integer.valueOf(rs.getString("c"));
+	a[i] = temp-1;
 	i++;
 }
 %>
@@ -42,27 +43,27 @@ while(rs.next()){
 <tr>
 <td> <img src="Image/Aap.jpg" alt="AAP Logo"> </td>
 <td> Aam Aadmi Party </td>
-<td> <%=a[1]==null?0:a[1] %></td>
+<td> <%=a[0] %></td>
 </tr>
 <tr>
 <td> <img src="Image/bjp.jpg" alt="BJP Logo"> </td>
 <td> BJP </td>
-<td> <%=a[2]==null?0:a[2] %></td>
+<td> <%=a[1] %></td>
 </tr>
 <tr>
 <td> <img src="Image/bsp.jpg" alt="BSP Logo"> </td>
 <td> BSP </td>
-<td> <%=a[3]==null?0:a[3] %></td>
+<td> <%=a[2] %></td>
 </tr>
 <tr>
 <td> <img src="Image/congress.png" alt="Congress Logo"> </td>
 <td> Congress </td>
-<td> <%=a[4]==null?0:a[4] %></td>
+<td> <%=a[3] %></td>
 </tr>
 <tr>
 <td> <img src="Image/CPI-banner.jpeg" alt="CPI Logo"> </td>
 <td> CPI </td>
-<td> <%=a[5]==null?0:a[5] %></td>
+<td> <%=a[4] %></td>
 </tr>
 </table>
 </div>
